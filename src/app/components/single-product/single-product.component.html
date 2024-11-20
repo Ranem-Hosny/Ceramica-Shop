@@ -1,0 +1,244 @@
+<app-header></app-header>
+<div class="container">
+  
+    <div class=" compiended d-flex flex-wrap mt-5">
+    
+<div class="card d-flex col-8 " class=" align-item-end p-2">
+    
+  <div class="gallery row ms-2 ">
+    <div class="thumbnails col-2">
+      <img [src]="product.image2" alt="Image 1" width="100px" height="100px" class="mb-3 imhover" >
+      <img [src]="product.image3"  alt="Image 2" width="100px" height="100px" class="imhover">
+
+    </div>
+    <div class="main-image col-6">
+      <img id="main-image" [src]="product.image1" alt="Main Image" width="400px" height="400px" class="imhover1">
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="bread d-inline-block justify-content-left align-item-left " >
+    <nav aria-label="breadcrumb d-inline-block">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">ceramic</a></li>
+        <li class="breadcrumb-item active " aria-current="page">{{product.name}}</li>
+       <!-- <div class="arrowedtext d-inline-block carousel slide"> 
+       <div class="arrow1 d-inline-block "> <a href=""data-bs-toggle="tooltip" data-bs-title="Default tooltip" class="arrowed-link " style="font-size: 30px;"   >  <  </a></div>
+        <div class="arrow2 d-inline-block "> <a href="" class="arrowed-link "style="font-size: 30px;" > > </a> </div> </div> -->
+      </ol>
+
+      
+       
+      
+      
+    </nav>
+    
+    <br>
+
+    <div class=" comma  d-inline-block col-12  justify-content-left align-item-left box  ">
+     
+        <!-- <a href=""  class="col-4"> ceramic, </a>
+        <a href=""class="col-4"> ceramic coating, </a>
+        <a href=""class="col-4">ceramic ketchinware </a> -->
+     
+    <div class="d-block col-12">
+        <h1 class="h col-4 ">{{product.name | titlecase}}</h1>
+
+        <h2 class="hh col-4 d-inline-block">
+          <del>{{product.oldPrice | currency : '$'}}</del>
+          {{product.newPrice |currency :'$'}} & <span>Free Shipping</span>
+        </h2>
+      
+        <p class="col-4">{{description}}</p></div>
+           <br>
+           <div class="input-group col-3 d-flex">
+            <!-- <button class="btn  col-1" type="button">-</button>
+            <input type="number" class="col-1" value="1" min="0"[(ngModel)]="count" readonly>
+            <button class="btn plus  col-1" type="button">+</button> -->
+            <button class=" cartt btn d-flex col-3 " type="button" (click)="gotoproduct(product.id)">Add to Cart</button>
+
+          </div>
+          
+          
+        
+        
+        
+
+
+
+           <hr>
+
+           
+
+           <div>
+            <p>
+              Free shipping on orders over $50!
+              <ul>
+              <li>&#x2713; No-Risk Money Back Guarantee!</li>
+              <li>&#x2713; No Hassle Refunds</li>
+              <li>&#x2713; Secure Payments</li>
+
+                 
+                 
+                 
+                </ul>
+             
+            </div>
+
+           
+
+           
+           
+    </div>
+    <div class="pay checkout-container text-center mb-3">
+       <div class="paytext"><h3 class="centered-heading " >guranteed safe checkout </h3></div>
+      <div class="payment-icon">
+        <img src="visa.jpg" alt="logo">
+        <img src="master.jpg" alt="logo">
+      <img src="exp.jpg" alt="logo"  >
+      <img src="discover.jpg" alt="logo">
+    </div>
+     </div>
+   
+    
+  </div>
+ 
+</div>
+
+
+  <br>
+
+
+  <br>
+  <div class="container2">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active mb-1" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="form-tab" data-bs-toggle="tab" data-bs-target="#form" type="button" role="tab" aria-controls="form" aria-selected="false">review</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+        <br>
+       <p>{{description}}</p>
+      </div>
+
+
+      
+      <div  class="tab-pane fade justify-content-center " id="form" role="tabpanel" aria-labelledby="form-tab"  >
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Be the first to review "Ceramic Cup"</h1>
+              <p>Your email address will not be published. Required fields are marked *</p>
+            
+                <div class="mb-3 ">
+                  <label for="rating" class="form-label myrating">Your rating *</label>
+                  <input type="text" class="form-control" id="rating" required>
+                </div>
+                <div class="mb-3 ">
+                  <label for="review" class="form-label review">Your review *</label>
+                  <textarea class="form-control" id="review" rows="3" required></textarea>
+                </div>
+                <div class="mb-3 d-inline-block name col-5 ">
+                  <label for="name" class="form-label">Name *</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3  d-inline-block col-5  Email">
+                  <label for="email" class="form-label">Email *</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-check mb-3 mycheckbox">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Save my name, email, and website for the next time I comment</label>
+                </div>
+                <button type="submit" class="btn submit">Submit</button>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="releatedproduct"><p> <b>Releated Products</b> </p></div>
+
+<div class="row justify-content-center">
+  <div class="d-inline-block collection justify-content-center col-12 "></div>
+  <div class="card card1 col-3" style="width: 16rem; height: 430px;" >
+    <a routerLink="/product/10"><img src="product-09-300x300.jpg" class="card-img-top " alt="..." ></a>
+    <div class="card-body">
+      <h5 class="card-title">ceramic bottles</h5>
+      
+        <i class="stars">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </i>
+    
+      <p class="card-text">$249.00 </p>
+      <!-- <a href="" class="link card-link-md">ceramic drink coasters</a> -->
+    </div>
+  </div>
+
+  <div class="card  card2 col-3" style="width: 16rem; height: 430px; ">
+    <a routerLink="/product/2"><img src="ceramic-planter-01-300x300.jpg" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">Ceramic Planter</h5>
+      <i class="stars">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+            </i>
+      <p class="card-text">$299.00</p>
+    </div>
+  </div>
+
+  <div class="card card3 col-3" style="width: 16rem; height: 430px; ">
+    <a routerLink="/product/3"><img src="product-01-300x300.jpg" class="card-img-top" alt="..."> </a>
+    <div class="card-body">
+      <h5 class="card-title">Ceramic Plates</h5>
+      <i class="stars">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+            </i>
+      <p class="card-text">$119.00</p>
+      <!-- <a href="#" class="link">ceramic plates and bowls</a> -->
+    </div>
+  </div>
+
+  <div class="card  card4 col-3 " style="width:16rem;  height: 430px; ">
+   <a routerLink="/product/8"> <img src="product-07-300x300.jpg" class="card-img-top" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title">Ceramic Plates And Spoons</h5>
+      <i class="stars">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+            </i>
+      <p class="card-text">$299.00</p>
+      <!-- <a  class="link">ceramic pastel plates </a> -->
+    </div>
+  </div>
+  
+</div>
+
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,248 @@
+.contact-support {
+    background-color: #025048;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.contact-text {
+    max-width: 50%;
+}
+
+.contact-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    word-spacing: 3px;
+}
+
+.contact-image img {
+    max-width: 400px;
+}
+
+.contact-section {
+    margin-top: 100px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.contact-info,
+.contact-form {
+    width: 45%;
+}
+
+.contact-info h2{
+    color: #1b564a;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.contact-info p{
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 3px;
+}
+
+.contact-details h4,
+.social-media h4{
+    letter-spacing: 2px;
+    color: #1b564a;
+}
+
+.contact-details .detail {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-details .detail i {
+    font-size: 20px;
+    color: #025048;
+    color: #2f4f4f;
+    margin-right: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #2f4f4f;
+    font-size: 24px;
+}
+
+.social-media h4{
+     margin-bottom: 20px;
+     margin-left: 20px;
+}
+
+.social-media a:hover {
+    color: #66a3a3;
+}
+
+.contact-section {
+    background-color: white;
+    padding: 50px;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f8f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c0b9b9;
+}
+
+.contact-form textarea{
+    height: 100px;
+}
+
+.star{
+    color: red;
+    font-weight: normal;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .name-fields input {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    color: rgb(88, 84, 84);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+.contact-form button {
+    padding: 10px 20px;
+    /* background-color: #f3f8f6; */
+    color: #fff;
+    background-color: #2f4f4f;
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.contact-form button:hover{
+   transform: scale(0.9);
+   transition: 0.4s;
+   opacity: 1;
+}
+
+.container {
+    display: flex;
+    padding: 50px;
+    background-color: #f3f8f6;
+    height: 600px;
+}
+
+.left-area {
+    flex: 1;
+    margin-right: 50px;
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.left-area h1 {
+    color: #025048;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.left-area p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    word-spacing: 3px;
+}
+
+.right-area{
+    flex: 2;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.accordion-item {
+    margin-bottom: 1px;
+    width: 70%;    
+}
+
+.accordion {
+    background-color: white;
+    color: #025048;
+    cursor: pointer;
+    padding: 22px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+    font-weight:bold;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    }
+
+.accordion .arrow {
+    float: right;
+    transition: transform 0.4s;
+    font-style: normal;
+    font-family: "Font Awesome 5 Free";
+}
+
+.accordion.active .arrow {
+    transform: rotate(180deg); 
+}
+
+.accordion:hover {
+    background-color: #ddd;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    height: 100px;
+}
+
+.panel p {
+    margin: 15px 10px 15px 15px ;
+    font-size: 17px;
+    word-spacing: 2px;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.5;
+}

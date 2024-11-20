@@ -1,0 +1,387 @@
+<app-header></app-header>
+<section id="header">
+   
+    <div class="head">
+        <div class="text">
+            <p class="first-p">welcome to ceramic shop</p>
+            
+            <h1>elevate your space with ceramic elegance.</h1>
+
+            <p id="p-2">starting from just $149.00</p>
+            <button class="btn-head" routerLink="/shop">shop now</button>
+        </div>
+        <div class="img">
+            <div class="img-0">
+                <img src="hero-01.jpg" alt="">
+            </div>
+            <!-- <div class="img-01">
+                <img src="hero-02.jpg" alt="">
+            </div> -->
+        </div>
+    </div>
+</section>
+<section id="About-Ceramic-shop">
+
+    <h3>About Ceramic Shop</h3>
+    <p class="about-p">The versatility of ceramics is what makes them truly remarkable, with their presence in
+        various forms such as stoneware and porcelain.
+    </p>
+    <div class="About-Ceramic-shop-imgs">
+        <div class="img1">
+            <img src="about-01-400x506.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="about-02.jpg" alt="">
+
+            <div id="about-text">
+                <p class="h-img2">Welcome to Ceramic Shop, where passion meets craftsmanship to bring you a
+                    world of timeless beauty and creativity.</p>
+                <p class="p-img2">Our journey is steeped in the art of ceramics, where each piece tells a
+                    unique story. Get to know the heart and soul behind our store.</p>
+                <!-- <a href="#header" id="read-more">read more</a> -->
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="products-category">
+    <div class="category-text">
+        <h3>THE BEST OR CERMAICS
+        </h3>
+        <p class="about-p">Our Products Category​</p>
+        <p class="P-2"> Explore our exquisite collection of ceramic treasures that elevate your spaces and
+            celebrate the artistry of craftsmanship. From dinnerware to decor, each piece in our product range is a
+            testament to quality, style, and the timeless beauty of ceramics.
+
+        </p>
+    </div>
+    <div class="products-flex">
+        <div class="product-item">
+            <img src="category-01.jpg" alt="product">
+            <h4>Stylish Ceramic Home Decor <br> Starting from just $99.00
+
+
+            </h4>
+        </div>
+        <div class="product-item">
+            <img src="category-02.jpg" alt="product">
+            <h4>Garden and Outdoor Accents <br> Starting from just $99.00
+            </h4>
+        </div>
+        <div class="product-item">
+            <img src="category-03.jpg" alt="product">
+            <h4>Garden and Outdoor Accents <br> Starting from just $99.00
+            </h4>
+        </div>
+    </div>
+</section>
+
+<section id="Most-Popular">
+    <h3>Most Popular</h3>
+    <p class="about-p">Discover the Latest Additions at Your Top Choice Flower Shop</p>
+    <div class="Most-Popular-cards">
+        <div class="card1" data-name="ceramic cup" data-price="119" *ngFor="let item of Products">
+            <div class="oveerlay">
+
+             <img [src]="item.image1" class="product-image" alt="" (click)="gotoproductimg(item.id)" >
+                <label for="">sale!</label>
+                <i (click)="gotoproduct(item.id)" class="fa-solid fa-cart-shopping shopping "></i>
+            </div>
+            <div class="Most-Popular-text">
+                <h6>Ceramic</h6>
+                <h4><a routerLink="/product/item.id">{{item.name}}</a></h4>
+                <i class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </i>
+                <p><del>{{item.oldPrice |currency :'$'}}</del>
+                    {{item.newPrice|currency :'$'}}</p>
+                     <button class="add-to-cart" data-product-id="1" (click)="gotoproduct(item.id)">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- <div class="card1" data-name=" Ceramic Planter
+        " data-price="239">
+            <div class="oveerlay">
+
+                <a routerLink="/product/2"><img src="ceramic-planter-01-300x300.jpg" alt=""></a>
+                <label for="">sale!</label>
+                <a routerLink="/cart"><i class="fa-solid fa-cart-shopping shopping"></i></a>
+            </div>
+
+            <div class="Most-Popular-text">
+                <h6>Ceramic</h6>
+                <h4><a routerLink="/product/2">Ceramic Planter</a></h4>
+                <i class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </i>
+                <p><del>$237.00</del>
+                    $189.00 </p>
+                    <a routerLink="/cart"> <button class="add-to-cart" data-product-id="2">Add to Cart</button></a>
+
+            </div>
+        </div>
+        <div class="card1" data-name="  Ceramic Plates" data-price="299.00">
+            <div class="oveerlay">
+                <a routerLink="/product/3"><img src="product-01-300x300.jpg" alt=""></a>
+                <label for="">sale!</label>
+                <a routerLink="/cart"><i class="fa-solid fa-cart-shopping shopping"></i></a>
+            </div>
+
+
+            <div class="Most-Popular-text">
+                <h6>Ceramic</h6>
+                <h4><a routerLink="/product/3">  Ceramic Plates</a></h4>
+                <i class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </i>
+
+                <p><del>$237.00</del>
+                    $189.00 </p>
+                    <a routerLink="/cart"> <button class="add-to-cart" data-product-id="3">Add to Cart</button></a>
+
+            </div>
+        </div>
+        <div class="card1" data-name="Ceramic Plates and Bowls
+        " data-price="119">
+            <div class="oveerlay">
+                <a routerLink="/product/4"><img src="product-02-300x300.jpg" alt=""></a>
+                <label for="">sale!</label>
+                <a routerLink="/cart"><i class="fa-solid fa-cart-shopping shopping"></i></a>
+            </div>
+            <div class="Most-Popular-text">
+                <h6>Ceramic</h6>
+                <h4><a routerLink="/product/4">Ceramic Plates and Bowls </a></h4>
+                <i class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </i>
+
+                <p><del>$237.00</del>
+                    $189.00</p>
+                    <a routerLink="/cart"> <button class="add-to-cart" data-product-id="4">Add to Cart</button></a>
+
+            </div>
+        </div>
+        <div class="card1" data-name=" Ceramic Plates and Spoons
+        " data-price="209">
+            <div class="oveerlay">
+                <a routerLink="/product/8"><img src="product-07-300x300.jpg" alt=""></a>
+                <label for="">sale!</label>
+                <a routerLink="/cart"><i class="fa-solid fa-cart-shopping shopping"></i></a>
+            </div>
+            <div class="Most-Popular-text">
+                <h6>Ceramic</h6>
+                <h4><a routerLink="/product/8">Ceramic Plates and Spoons </a></h4>
+                <i class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </i>
+                <p><del>$237.00</del>
+                    $189.00 </p>
+               <a routerLink="/cart"> <button class="add-to-cart" data-product-id="5">Add to Cart</button></a>
+            </div>
+        </div>
+        <div class="card1" data-name="Ceramic Vases and Planters
+
+        " data-price="217">
+            <div class="oveerlay">
+                <a routerLink="/product/11"><img src="contact-01-300x300.jpg" alt=""></a>
+                <label for="">sale!</label>
+                <a routerLink="/cart"><i class="fa-solid fa-cart-shopping shopping"></i></a>
+
+            </div>
+            <div class="Most-Popular-text">
+                <h6>Ceramic</h6>
+                <h4><a routerLink="/product/11"> Ceramic Vases and Planters</a></h4>
+                <i class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </i>
+
+
+                <p><del>$237.00</del>
+                    $189.00 </p>
+               <a routerLink="/cart"><button class="add-to-cart" data-product-id="6">Add to Cart</button></a> 
+
+
+            </div>
+        </div> -->
+    </div>
+
+
+
+
+
+</section>
+<section id="Begin">
+    <div class="text-Begin">
+        <p class="p1-Begin">Begin Your Ceramic Journey Explore Our Stunning Collections
+        </p>
+        <p class="p2-Begin">Starting from just $149.00
+        </p>
+        <a class="Begin-btn" routerLink="/shop">shop now</a>
+    </div>
+
+</section>
+
+
+<section id="Trending">
+    <h3>Trending Now
+    </h3>
+    <p class="about-p">Minimalist Ceramic Designs
+    </p>
+    <div class="container-Trending">
+        <div class="container-Trending-img">
+            <div class="front">
+                <img src="product-09-300x300.jpg" alt="">
+
+            </div>
+            <div class="back">
+
+                <h6>Ceramic</h6>
+                <h4><a href="#">ceramic bottles</a></h4>
+                <i class="stars">
+                    <i class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </i>
+                </i>
+
+
+                <p>
+                    $189.00</p>
+
+            </div>
+        </div>
+        <div class="container-Trending-img">
+            <div class="front">
+                <img src="ceramic-cup-01-300x300.jpg" alt="">
+
+            </div>
+            <div class="back">
+
+                <h6>Ceramic</h6>
+                <h4><a href="#">ceramic cup</a></h4>
+                <i class="stars">
+                    <i class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </i>
+                </i>
+                <p><del>$237.00</del>
+                    $189.00</p>
+
+            </div>
+        </div>
+        <div class="container-Trending-img">
+            <div class="front">
+                <img src="product-03-300x300.jpg" alt="">
+
+            </div>
+            <div class="back">
+
+                <h6>Ceramic</h6>
+                <h4><a href="#">ceramic drink coasters</a></h4>
+                <i class="stars">
+                    <i class="stars">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </i>
+                </i>
+
+
+
+                <p><del>$157.00</del>
+                    $99.00</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Testimonial">
+    <h3>Testimonial</h3>
+    <p class="about-p">What Our Customers Say
+    </p>
+    <div class="text-Testimonial">
+        <div class="text1">
+            <i class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </i>
+
+            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <img class="Testimonial-01" src="testimonial-skip-01.jpg" alt=""> Wade Warren
+        </div>
+
+        <br>
+        <div class="text1">
+            <i class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </i>
+
+            <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <img class="Testimonial-02" src="testimonial-skip-02.jpg" alt=""> <span>Wade Warren</span>
+        </div>
+    </div>
+
+</section>
+<section id="Uncover">
+
+    <img src="footer-cta-768x444.jpg" alt="">
+    <div class="right-side">
+        <p id="Uncover-p">Uncover the World of Ceramic Artistry
+            Start Your Journey Here!
+            
+        </p>
+        <a class="Uncover-btn" routerLink="/shop">
+            shop now
+        </a>
+    </div>
+    <button  id="scroll-btn" ><a href="#header"><i class="fa-solid fa-angle-up"></i></a></button>
+
+</section>
+<app-footer></app-footer>

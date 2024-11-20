@@ -1,0 +1,64 @@
+<app-header></app-header>
+   <div class="main mt-60 mb-60">
+        <div class="title mt-40">
+            <div class="container">
+                <h1 class="fs-2 green ">Shop</h1>
+                <hr class="text-black-50  mb-40">
+            </div>
+        </div>
+
+            <div class="content">
+                <div class="container">
+                    <div class="drop">
+                        <div class="d-flex justify-content-between align-items-baseline ">
+                            <p>Showing all 11 results</p>
+                            <!-- <select  class="border border-0 cursor-pointer mb-40" name="" id="" >
+                                <option value="">sort by price: low to heigh</option>
+                                <option value="">Default sorting</option>
+                                <option value="">sort by popularity</option>
+                                <option value="">sort by average rating</option>
+                                <option value="">sort by latest</option>
+                                <option value="">sort by price: heigh to low</option>
+                            </select> -->
+                        </div>
+                    </div>
+
+
+                    <div class="products">
+                        <div class="row">
+
+
+                            <div class="col-12 col-md-6 col-lg-4 mb-60" *ngFor="let item of Products">
+                                <div class="image position-relative">
+                                    <img class="w-100 h-auto" [src]="item.image1" alt="{{item.name}}" (click)="gotoproduct(item.id)">
+                                    <span class="position-absolute top-5 left-5 cursor-pointer gray bg-white px-15 py-5 rounded-pill fs-14 fw-semibold">Sale!</span>
+                                </div>
+                                <div class="description pt-16 pb-16">
+                                    <div class="catogrey opacity-75 mb-8 fs-6 gray">{{item.categoryName}}</div>
+                                    <h2 class="name green fs-4">{{item.name|titlecase}}</h2>
+                                    <div class="rating d-flex  mb-8 gray fs-14 ">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        
+                                    </div>
+                                    <div class="price">
+                                        
+                                            <span *ngIf="item.oldPrice !=0" class="fw-bold gray fs-5 opacity-50 text-decoration-line-through m-2">{{item.oldPrice |currency : '$'}}</span>
+
+                                      
+                                        <span class="fw-bold gray fs-5">{{item.newPrice |currency : '$'}}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+   </div>
+<app-footer></app-footer>

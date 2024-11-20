@@ -1,0 +1,125 @@
+<app-header></app-header>
+
+<section class="contact-support">
+    <div class="contact-text">
+        <h1>Contact Us</h1>
+        <p>We're here to assist you in any way we can. Whether you have questions about our products, need personalized recommendations, or simply want to connect with our team, don't hesitate to reach out.</p>
+    </div>
+    <div class="contact-image">
+        <img src="contact-01-300x300.jpg" alt="Ceramic Pottery">
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-info">
+        <h2>Get in touch</h2>
+        <p>Share some details here. This is a flexible section where you can share anything you want.It could be details or some information</p>
+
+        <div class="contact-details">
+            <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                    <h4> ADDRESS</h4>
+                    <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                </div>
+            </div>
+<hr>
+            <div class="detail">
+                <i class="fas fa-phone"></i>
+                <div class="info">
+                    <h4> PHONE</h4>
+                    <p>(+91) 987 654 321</p>
+                </div>
+            </div>
+<hr>
+            <div class="detail">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <h4> EMAIL</h4>
+                    <p>{{mail}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <h4> FOLLOW</h4>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <form class="contact-form">
+     
+        <label for="name">Name <span class="star" >*</span></label>
+        <div class="name-fields">
+          <input type="text" id="first-name" name="first-name" placeholder="First"  required>
+          <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+        </div>
+
+       
+
+        <div>
+            <label for="email">Email <span class="star" >*</span></label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="message"> Comment or Message</label>
+            <textarea id="message"></textarea>
+        </div>
+        <button class="btn" type="submit">SUBMIT</button>
+    </form>
+
+
+
+
+</section>
+
+<div class="container">
+    <div class="left-area">
+        <h1>FAQs</h1>
+        <p>
+            Find answers to common questions about our ceramic products, ordering, shipping, care, and more. If you need further information, feel free to contact our support team.
+        </p>
+    </div>
+
+    <div class="right-area">
+        <div class="accordion-item" id="accordion">
+            <button class="accordion">Ordering and Shipping <span class="arrow">&#9660;</span></button>
+            <div class="panel">
+                <p>Find answers to questions about the ordering process, shipping options, delivery times, and tracking your ceramic product shipments. </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion">Product Care and Maintenance <span class="arrow">&#9660;</span></button>
+            <div class="panel">
+                <p>Learn how to care for and maintain your ceramic products to ensure their longevity and beauty. Get tips on cleaning, handling, and preserving your pieces.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion">Returns and Refunds <span class="arrow">&#9660;</span></button>
+            <div class="panel">
+                <p>Discover our policies on returns and refunds. This section explains how to initiate a return, the eligibility criteria, and the refund process for your ceramic purchases.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion">Custom Orders and Personalization <span class="arrow">&#9660;</span></button>
+            <div class="panel">
+                <p>Interested in custom or personalized ceramic products? Here, you’ll find information on how to place custom orders and personalize your items to make them uniquely yours.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion">Contact and Customer Support <span class="arrow">&#9660;</span></button>
+            <div class="panel">
+                <p>Have questions or need assistance? Find details on how to get in touch with our customer support team, including contact information and response times. We’re here to help with any inquiries you may have.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

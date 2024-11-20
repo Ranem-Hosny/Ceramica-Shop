@@ -1,0 +1,116 @@
+*{
+    font-family: 'Work Sans', sans-serif; 
+    box-sizing: border-box;
+}
+
+
+.green{
+    color: #025048;
+}
+.gray{
+    color: #424b4a;
+}
+.bg-green{
+    background-color: #025048;
+}
+
+
+
+.px-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.py-5{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+
+.mb-8{
+    /* margin-bottom: 8px; */
+    margin-bottom: .5rem;
+}
+.mb-16{
+    /* margin-bottom: 16px; */
+    margin-bottom: 1rem;
+}
+.mb-40{
+    /* margin-bottom: 40px; */
+    margin-bottom: 2.5rem;
+}
+.mb-60{
+    /* margin-bottom: 60px; */
+    margin-bottom: 3.75rem;
+}
+
+.mt-60{
+    /* margin-top: 60px; */
+    margin-top: 3.75rem;
+}
+
+.mt-40{
+    /* margin-top: 40px; */
+    margin-top: 2.5rem;
+}
+
+.pt-16{
+    /* padding-top: 16px; */
+    padding-top: 1rem;
+}
+.pb-16{
+    /* padding-bottom: 16px; */
+    padding-bottom: 1rem;
+}
+
+
+.top-5{
+    top:5%
+}
+.left-5{
+    left:5%
+}
+
+
+.fs-14{
+    /* font-size: 14px; */
+    font-size: .875rem;
+}
+
+.lh-100{
+    /* line-height: 100px; */
+    line-height: 6.25rem;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+@media(min-width: 992px){
+    .container{
+        max-width: 1240px;
+    }
+}
+
+h1,h2{
+     font-family: 'Playfair Display', serif;
+}
+
+
+.main .products .image span{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.3s;
+    
+}
+
+ 
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free";
+  color: #c69610;
+}

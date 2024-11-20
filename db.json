@@ -1,0 +1,137 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "ceramic cup",
+        "oldPrice": 237.00,
+        "newPrice":189.00,
+        "image1":"/ceramic-cup-01-300x300.jpg",
+        "image2":"/product-1-1.jpg",
+        "image3":"/product-1-2.jpg",
+        "categoryId":1,
+        "categoryName":"ceramic"
+      },
+      {
+        "id":2 ,
+        "name": "ceramic planter",
+        "oldPrice": 349.00,
+        "newPrice":299.00,
+        "image1":"/ceramic-planter-01-300x300.jpg",
+        "image2":"/product-2.jpg ",
+        "image3":"/ceramic-planter-01-100x100.jpg ",
+        "categoryId":1,
+        "categoryName":"ceramic"
+      },
+      {
+        "id": 3,
+        "name": "ceramic plates",
+        "oldPrice":179.00 ,
+        "newPrice":119.00,
+        "image1":"/product-01-300x300.jpg",
+        "image2":"/product-3.jpg",
+        "image3":"/product-01-100x100.jpg",
+        "categoryId":1,
+        "categoryName":"ceramic"
+      
+      },
+      {
+        "id":4 ,
+        "name": "ceramic plates and bowls",
+        "oldPrice":249.00 ,
+        "newPrice":209.00,
+        "image1":"/product-02-300x300.jpg",
+        "image2":"/product-4.jpg",
+        "image3":"/product-02-100x100.jpg",
+        "categoryId":1,
+        "categoryName":"ceramic"
+      
+      },
+      {
+        "id":5 ,
+        "name": "ceramic drink coasters",
+        "oldPrice":157.00 ,
+        "newPrice":99.00,
+        "image1":"/product-03-300x300.jpg",
+        "image2":"/product-5.jpg",
+        "image3":"/product-03-100x100.jpg",
+        "categoryId":1,
+        "categoryName":"ceramic"
+      },
+      {
+        "id": 6,
+        "name": "ceramic plant pots",
+        "oldPrice":0 ,
+        "newPrice":139.00,
+        "image1":"/product-05-300x300.jpg",
+        "image2":"/product-6.jpg",
+        "image3":"/product-05-100x100.jpg",
+        "categoryId":2,
+        "categoryName":"pottery"
+      },
+      {
+        "id": 7,
+        "name": "ceramic pastel plates",
+        "oldPrice":239.00 ,
+        "newPrice":209.00,
+        "image1":"/product-06-300x300.jpg",
+        "image2":"/product-7.jpg",
+        "image3":"/product-06-100x100.jpg",
+        "categoryId":1,
+        "categoryName":"ceramic"
+      },
+      {
+        "id":8 ,
+        "categoryId":1,
+        "name": "ceramic plates and spoons",
+        "oldPrice":349.00 ,
+        "newPrice":299.00,
+        "image1":"/product-07-300x300.jpg",
+        "image2":"/product-8.jpg",
+        "image3":"/product-07-100x100.jpg",
+        "categoryName":"ceramic"
+      },
+      {
+        "id":9 ,
+        "categoryId":1,
+        "name": "ceramic garden pots",
+        "oldPrice":179.00 ,
+        "newPrice":159.00,
+        "image1":"/product-08-300x300.jpg",
+        "image2":"/product-9.jpg",
+        "image3":"/product-08-100x100.jpg",
+        "categoryName":"ceramic"
+      
+      },
+      {
+        "id":10 ,
+        "categoryId":2,
+        "name": "ceramic bottles",
+        "oldPrice": 0,
+        "newPrice":249.00,
+        "image1":"/product-09-300x300.jpg",
+        "image2":"/product-10.jpg",
+        "image3":"/product-09-100x100.jpg",
+        "categoryName":"pottery"
+      
+      },
+      {
+        "id":11 ,
+        "categoryId":2,
+        "name": "ceramic vases and planters",
+        "oldPrice":247.00 ,
+        "newPrice":217.00,
+        "image1":"/contact-01-300x300.jpg",
+        "image2":"/product-11.jpg",
+        "image3":"/contact-01-100x100.jpg",
+        "categoryName":"pottery"
+      }
+      
+    ],
+    
+    "categories":[
+      {"categoryId":1, "categoryName":"ceramic"},
+      {"categoryId":2, "categoryName":"pottery"}
+    ]
+ 
+  }
+  

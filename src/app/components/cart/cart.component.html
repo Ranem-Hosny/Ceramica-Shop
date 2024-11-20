@@ -1,0 +1,35 @@
+<app-header></app-header>
+<h1>Cart</h1>
+
+<div class="cart">
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <tr>
+                <td><img class="product-image" [src]="product.image1" alt=""></td>
+                <td>{{product.name}}</td>
+                <td>{{product.newPrice|currency :'$'}}</td>
+                <td>1</td>
+                <td>{{product.newPrice|currency :'$'}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="cart-totals">
+        <h2>Cart totals</h2>
+        <hr>
+        <p>Subtotal : <span id="subtotal">{{product.newPrice|currency :'$'}}</span></p>
+        <p>Total : <span id="total">{{product.newPrice|currency :'$'}}</span></p>
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <!-- <button id="clear-cart-btn">Clear Cart</button>  -->
+    </div>
+</div>
+<app-footer></app-footer>

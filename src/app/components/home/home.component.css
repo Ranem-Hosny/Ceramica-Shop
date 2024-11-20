@@ -1,0 +1,971 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header {
+    min-height: 100vh;
+    background-color: #025048;
+}
+.head {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #025048;
+    position: absolute;
+    top: 100px;
+    /* margin-top: 10px; */
+}
+.product-image:hover{
+    cursor: pointer;
+}
+.shopping:hover{
+    cursor: pointer;
+}
+.text {
+    width: 40%;
+    background-color: #025048;
+    margin: auto;
+    text-align: start;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 120px;
+
+}
+
+.text .first-p {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 60px;
+    color: #fff;
+    margin-left: -9px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    font-family: "Playfair Display",sans-serif;
+}
+#p-2{
+   margin-top: 60px; 
+   
+color:#fff;
+text-transform:'capitalize';
+font-size:25px;
+font-size:"Playfair Display";
+}
+
+.btn-head {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: #025048;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.btn-head:hover {
+    color: #025048;
+    font-weight: 100;
+    background-color: #fff;
+}
+
+.img {
+    width: 40%;
+    position: relative;
+}
+
+.img-0 {
+    top:60px;
+    height: 10px;
+    right: 10px;
+    width: 10px;
+    position: relative;
+}
+
+.img-01 {
+    position: absolute;
+    z-index: 9999999999;
+    top: 71px;
+    right: 320px;
+}
+
+#About-Ceramic-shop {
+    background-color: #fff;
+    color: #025048;
+    position: relative;
+    
+}
+
+#About-Ceramic-shop h3,
+#Most-Popular h3,
+#Trending h3,
+#Testimonial h3,
+#Category h3 {
+    margin: 150px 0 10px 80px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    word-spacing: 1.5;
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #025048;
+}
+
+
+.about-p {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-transform: capitalize;
+    word-spacing: 1;
+    margin: 20px 0 0 80px;
+    color: #025048;
+}
+
+.About-Ceramic-shop-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.img1 img {
+    min-height: 120vh;
+}
+
+.About-Ceramic-shop-imgs .img2 {
+    margin-top: 80px;
+    position: relative;
+}
+
+#about-text {
+    position: absolute;
+    top: 55%;
+}
+
+.h-img2 {
+    padding: 50px 0 20px;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.p-img2 {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: capitalize;
+    line-height: 1.2;
+    color: black;
+}
+
+#read-more {
+    color: #025048;
+    border: 1px solid #025048;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+#read-more:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #025048;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 30px;   
+}
+
+.products-category {
+    padding: 20PX;
+    margin-top: 50PX;
+}
+
+.category-text {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 40PX;
+}
+
+.category-text h3 {
+    margin: 150px 0 10px 80px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    word-spacing: 1.5;
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #025048;
+}
+
+.category-text .P-2 {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 10px 80px;
+    width: 40%;
+    line-height: 1.6;
+}
+
+.products-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20PX;
+}
+
+.product-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.product-item h4 {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+#Most-Popular {
+    width: 100%;
+    padding: 50px;
+}
+
+.Most-Popular-cards {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#Most-Popular .card1 {
+    width: 30%;
+    padding: 20px 20px 0 20px;
+    position: relative;
+}
+
+.card1 img {
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.shopping {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 20px;
+    color: #025048;
+    visibility: hidden;
+}
+
+.shopping:hover {
+    background-color: #fff;
+}
+
+.oveerlay:hover .shopping {
+    visibility: visible;
+}
+
+
+.Most-Popular-text {
+
+    padding: 10px 0 100px 5px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.Most-Popular-text h6 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #424b4a;
+}
+
+.Most-Popular-text h4 a {
+    color: #025048;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.Most-Popular-text p {
+    color: #424b4a;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Most-Popular-text mark {
+    color: #232727;
+}
+
+#Trending {
+    min-height: 90vh;
+}
+
+.container-Trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-Trending-img {
+    width: 30%;
+    position: relative;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform, .8s;
+}
+
+.front img {
+    width: 100%;
+    display: block;
+
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #025048;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 180px;
+    z-index: 2;
+    text-align: center;
+}
+
+
+.back .stars {
+    color: #d3c71b;
+    display: flex;
+    /* justify-content: center; */
+    margin: 10px 0 0 0;
+    margin-left: 35px;
+}
+
+.back h6 {
+    margin: 10px 0;
+    color: #F1F4F1;
+    font-size: 40px;
+}
+
+.back h4 {
+    margin: 10px 0;
+    color: #F1F4F1;
+    font-size: 20px;
+}
+
+.back p {
+    margin: 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.back a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.container-Trending-img:hover .front {
+    transform: rotateY(180deg);
+}
+
+.container-Trending-img:hover .back {
+    transform: rotateY(360deg);
+}
+
+#Begin {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-image:url("../../../../public/cta-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.text-Begin {
+    background-color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 70px 0;
+    text-align: center;
+    width: 70%;
+}
+
+.text-Begin .p1-Begin {
+    color: #025048;
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.text-Begin .p2-Begin {
+    color: #025048;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 15px;
+    letter-spacing: 1;
+    word-spacing: 1;
+    margin-bottom: 20px;
+
+}
+
+.text-Begin .Begin-btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #025048;
+    color: #025048;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+
+}
+
+.text-Begin .Begin-btn:hover {
+    color: #fff;
+    background-color: #025048;
+}
+
+#Testimonial {
+    padding: 5px 30px 100px 30px;
+    background-color: #F1F4F1;
+}
+
+.text-Testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.text1 {
+    background-color: #fff;
+    color: #000;
+    width: 45%;
+    padding: 30px;
+    line-height: 2;
+    margin: auto;
+}
+
+.text1 p {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #FB8C24;
+}
+#scroll-btn {
+    cursor: pointer;
+    background-color: #025048;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 5px 7px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* display: none; */
+    z-index: 1000;
+}
+
+
+.Testimonial-01,
+.Testimonial-02 {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#Uncover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #025048;
+    min-height: 80vh;
+}
+
+.right-side {
+    color: #fff;
+    width: 55%;
+    z-index: 9999999999999;
+    margin: auto;
+}
+
+#Uncover img {
+    width: 45%;
+}
+
+#Uncover-p {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding: 60px;
+}
+
+.Uncover-btn {
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    margin: 0 0 0 80px;
+}
+
+.Uncover-btn:hover {
+    color: #025048;
+    background-color: #fff;
+}
+.add-to-cart {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #00332b;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav{
+        display: none;
+    }
+    .icon-nav{
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        top: 40px;
+    }
+    .icon-nav:hover{
+        display: flex;
+        z-index: 9999999999999999999999999999999999999;
+        text-align: center;
+    }
+    .menu{
+        margin-top: 25px;
+    }
+   .menu:before {
+    margin-top: 2px;
+   }
+   .text .first-p{
+    font-size:20px;
+    /* margin-top: 100px; */
+   }
+   .text h1{
+    font-size: 30px;
+    line-height: 1.5;
+    padding-bottom: 5px;
+   }
+   body{
+    width: 100%;
+   }
+   .text{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+   }
+   .head {
+    display: block;
+    width: 100%;
+  min-height: auto;
+   }
+
+   .img{
+    display: block;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    margin-right: 38px;
+
+   }
+   .img .img-0 {
+    width: 100%;
+    
+
+   }
+   .img-0 img{
+    width: 100%;
+    position: relative;
+    height: 450px;
+    display: flex;
+    z-index: 9999999999999999999999999999999999;
+
+   
+
+   }
+
+   .img-01{
+    margin-top: 60px;
+
+    width: 50%;
+    display: block;
+
+   }
+   .img-01 img{
+    width: 100%;
+    position: absolute;
+    left: 140%;
+    top: 80px;
+    
+   }
+
+   .about-p{
+    font-size: 20px;
+    width: 89%;
+    margin:15px 30px;
+    
+   }
+   #About-Ceramic-shop {
+    padding-top: 80px;
+   }
+
+   #About-Ceramic-shop h3 {
+    margin: 0 30px;
+    margin-top: 150px;
+   }
+   .About-Ceramic-shop-imgs{
+    display: block;
+    width: 100%;
+    margin-top: -80px;
+   }
+   .About-Ceramic-shop-imgs .img1 ,.img2{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+   }
+   .About-Ceramic-shop-imgs .img1 img {
+    width: 100%;
+    min-height: 0%;
+   }
+
+   .img2 img{
+    width: 100%;
+    margin-top: -30px;
+   }
+   #about-text{
+    margin-top: 80px;
+    /* text-align: center; */
+    margin-left: -30px;
+    
+   }
+   .h-img2{
+    font-weight: 100;
+    font-size: 18px;
+   }
+   .p-img2{
+    line-height: 1.5;
+
+   }
+   
+   .category-text{
+    margin-top:80%;
+    width: 100%;
+    /* display: block; */
+   }
+   .category-text .P-2{
+    font-size: 18px;
+    font-weight: 100;
+    width: 440px;
+    text-transform: capitalize;
+    margin-left: -50px;
+    color: #232727;
+    
+   }
+
+   .products-category h3 {
+    margin-left: -50px;
+   }
+   .products-category .about-p {
+    margin-left: -50px;
+   }
+
+   #Most-Popular h3 ,#Most-Popular .about-p{
+    margin-left: -40px;
+   }
+
+   .product-item{
+    display: block;
+    width: 100%;
+   }
+   #Most-Popular{
+    margin-top: -100px;
+   }
+
+   
+   .Most-Popular-cards {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     margin-top: 40px;
+    
+}
+
+#Most-Popular .card1 {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.card1 img {
+    width: 100%;
+    align-items: center;
+    position: relative;
+} 
+
+
+.text-Begin .p1-Begin{
+font-size: 20px;
+width: 300px;
+text-align: center;
+
+
+    
+}
+.p2-Begin{
+    width: 290px;
+    text-align: center;
+}
+.text-Begin{
+    padding: 20px 20px;
+}
+
+
+
+
+.container-Trending-img:hover .front {
+    transform: rotateY(0deg);
+}
+
+.container-Trending-img:hover .back {
+    transform: rotateY(0deg);
+}
+
+.back{
+    display: none;
+}
+
+
+#Testimonial{
+    margin-top: -200px;
+    padding-top:3px ;
+}
+#Testimonial h3 ,#Testimonial .about-p{
+margin-left: -0px;
+}
+.text-Testimonial{
+    display: block;
+}
+.text1{
+    width: 100%;
+    padding-bottom: 5px;
+
+}
+
+#Uncover {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #025048;
+    min-height: 100vh;
+}
+
+.right-side {
+    color: #fff;
+    width: 100%;
+    margin: auto;
+}
+
+#Uncover img {
+    width: 100%;
+}
+
+#Uncover-p {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.Uncover-btn {
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+margin-left: 180px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+footer {
+    background-color: #fff;
+    color: #025048;
+    min-height: auto;
+    margin: auto;
+    align-items: center;
+    padding-top: 60px;
+    color: #333;
+    text-align: center;
+}
+
+.footer-nav {
+    height: 100px;
+    align-items: center;
+    
+    display: block;
+    justify-content: space-evenly;
+    color: #333;
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-weight: 400;
+    font-family: "Playfair Display", sans-serif;
+    color: #333;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+hr{
+    margin-top: 90px;
+}
+
+.nav-footer ul {
+    display: block;
+    margin-top: 5px;
+}
+
+.nav-footer ul li {
+    list-style: none;
+    display: block;
+    margin-left: 30px;
+    padding-bottom: 5px;
+}
+
+.nav-footer ul li a {
+    color: #333;
+
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-footer ul li:hover {
+    transform: scale(1.2);
+}
+
+
+.media i {
+    padding-right: 10px;
+    color: #333;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-copy {
+    height: 100px;
+    display: block;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-copy-p {
+    font-size: 20px;
+}
+
+.nav-copy {
+    display: none;
+}
+
+.media p {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+
+
+}
+
