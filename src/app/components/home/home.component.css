@@ -28,7 +28,7 @@
     margin: auto;
     text-align: start;
     align-items: center;
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-left: 120px;
 
 }
@@ -44,7 +44,7 @@
 
 .text h1 {
     font-weight: 600;
-    font-size: 60px;
+    font-size: 40px;
     color: #fff;
     margin-left: -9px;
     text-transform: capitalize;
@@ -66,6 +66,8 @@ font-size:"Playfair Display";
 .btn-head {
     padding: 10px 15px;
     border: 1px solid #fff;
+        border-radius: 14px;
+
     font-size: 20px;
     font-weight: 300;
     color: #fff;
@@ -378,7 +380,7 @@ label {
 
 }
 
-.back {
+/* .back {
     transform: rotateY(180deg);
     background-color: #025048;
     display: flex;
@@ -394,9 +396,9 @@ label {
     color: #d3c71b;
     display: flex;
     /* justify-content: center; */
-    margin: 10px 0 0 0;
-    margin-left: 35px;
-}
+    /* margin: 10px 0 0 0; */
+    /* margin-left: 35px; */
+/* } */
 
 .back h6 {
     margin: 10px 0;
@@ -408,29 +410,29 @@ label {
     margin: 10px 0;
     color: #F1F4F1;
     font-size: 20px;
-}
+} */
 
-.back p {
+/* .back p {
     margin: 10px 0;
     color: #fff;
     display: flex;
     justify-content: center;
-}
+} */
 
-.back a {
+/* .back a {
     text-decoration: none;
     color: #fff;
     font-size: 30px;
     text-transform: capitalize;
-}
+} */
 
 .container-Trending-img:hover .front {
     transform: rotateY(180deg);
 }
 
-.container-Trending-img:hover .back {
+/* .container-Trending-img:hover .back {
     transform: rotateY(360deg);
-}
+} */
 
 #Begin {
     height: 100vh;
@@ -485,10 +487,10 @@ label {
 
 }
 
-.text-Begin .Begin-btn:hover {
+/* .text-Begin .Begin-btn:hover {
     color: #fff;
     background-color: #025048;
-}
+} */
 
 #Testimonial {
     padding: 5px 30px 100px 30px;
@@ -561,7 +563,7 @@ label {
 }
 
 #Uncover-p {
-    font-size: 60px;
+    font-size: 42px;
     font-weight: 900;
     text-transform: capitalize;
     padding: 60px;
